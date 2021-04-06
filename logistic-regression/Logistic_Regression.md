@@ -50,21 +50,21 @@ odds ratio ⇒ logit function ⇒ sigmoid 순으로 만들 수 있음
     - p가 성공확률 이라고 할 때,  $OR(OddsRatio)=p/(1-p)$
     - p가 0부터 1까지 증가할 때 처음에는 천천히 증가하다가 1에 가까워지면 급격히 증가
 
-    ![logistic-regression\image_md\Untitled.png]
+    ![logistic-regression\image_md\Untitled.png](logistic-regression\image_md\Untitled.png)
 
 2. **logit function**
     - $logit(p) = log(\frac{P}{1-P})$
     - P가 0.5일 때 0, 0과 1일 때 각각 무한대로 음수와 양수가 된다.
     - 세로 축을 z라고 할 때, $z = log(\frac{P}{1-P})$
 
-    ![logistic-regression\image_md\Untitled1.png]
+    ![logistic-regression\image_md\Untitled1.png](logistic-regression\image_md\Untitled1.png)
 
 3. **sigmoid**
     - 위 식을 z에 대하여 정리
 
     $$p = \frac{1}{1 + e^{-z}}$$
 
-    ![logistic-regression\image_md\Untitled2.png]
+    ![logistic-regression\image_md\Untitled2.png](logistic-regression\image_md\Untitled2.png)
 
 이진 분류시에 z의 범위를 무한대에서 0~1 범위로 줄이기 위해 sigmoid 사용
 
@@ -107,7 +107,7 @@ $$b = b - \frac{∂L}{∂w} = b + (y-a)1$$
 
 ⇒ 데이터가 고른 범위를 갖고있지 않기 때문!
 
-![logistic-regression\image_md\Untitled3.png]
+![logistic-regression\image_md\Untitled3.png](logistic-regression\image_md\Untitled3.png)
 
 각각의 특성값에 대한 범위가 너어어무 달라서 데이터마다 값이 천차만별이라서 발생한 문제. 학습 중 오버피팅이 발생한 예시. 
 
@@ -133,16 +133,16 @@ x = (cancer.data - m)/s
 
 x 값을 위와 같이 넣어서 바꿔준 다음에 다시 그래프를 출력해보면
 
-![logistic-regression\image_md\Untitled4.png]
+![logistic-regression\image_md\Untitled4.png](logistic-regression\image_md\Untitled4.png)
 
 얼추 비슷한 범위 안에 값들이 모여있는 것을 확인할 수 있다.
 
-이제 데이터 전처리 과정을 거친 후에 다시 돌려보고 결과와 그래프 비교해보기 ^___^
+### 데이터 전처리 과정을 거친 후에 다시 돌려보고 결과와 그래프 비교
 
 - 이전
 
-![logistic-regression\image_md\Untitled5.png]
+![logistic-regression\image_md\Untitled5.png](logistic-regression\image_md\Untitled5.png)
 
 - 이후
 
-![logistic-regression\image_md\Untitled6.png]
+![logistic-regression\image_md\Untitled6.png](logistic-regression\image_md\Untitled6.png)
